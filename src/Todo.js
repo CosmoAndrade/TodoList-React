@@ -16,6 +16,12 @@ function Todo() {
       setItems([...items,it])
  }
 
+
+ function onItemDelete(item){
+     let  filteredItems = items.filter(it => it.id != item.id)
+      setItems(filteredItems)
+ }
+
   return(
     <div className="container">
        
@@ -23,7 +29,7 @@ function Todo() {
         
         <TodoForm onAddItem={onAddItem} />
         
-        <List items={items}/>
+        <List onItemDelete={onItemDelete} items={items}/>
      
     </div>
   )
