@@ -8,7 +8,7 @@ function List (props){
       <ul className='list-group mt-3'>
         {props.items.map(item => (
         
-          <li className='list-group-item w-50 mt-2'>{item}</li>
+          <li key='item.id' className='list-group-item w-50 mt-2'>{item.text}</li>
         ))}
       </ul>
         
