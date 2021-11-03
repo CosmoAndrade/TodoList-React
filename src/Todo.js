@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Card from "./Card";
-import List from "./List";
+import Card from "./components/Card";
+import List from "./components/List";
 import './Todo.css'
-import TodoForm from "./TodoForm";
-import Item from './Item'
+import TodoForm from "./components/TodoForm";
+import Item from './components/Item'
 
 function Todo() {
 
