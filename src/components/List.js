@@ -26,6 +26,8 @@ function List (props){
           <li key='item.id'  id={item.done?'done':''} className='list-group-item w-50 mt-2'>
             {item.text}
 
+           
+
             <button style={{marginLeft:15}} className='btn btn-success' onClick={()=>{props.onDone(item)}}>
               <DoneIng done={item.done}></DoneIng>
             </button>
@@ -33,6 +35,8 @@ function List (props){
             <button style={{marginLeft:15}} className='btn btn-danger' onClick={()=> {props.onItemDelete(item)}}>
             <i class="bi bi-trash-fill" ></i>
             </button>
+
+          
            
             </li>
         ))}
