@@ -1,3 +1,6 @@
 .container{
     font-family: 'Courier New', Courier, monospace;
 }
+#done{
+    text-decoration: line-through;
+}
